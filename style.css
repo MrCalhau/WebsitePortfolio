@@ -1,0 +1,99 @@
+.TopWork{
+    background-color: rgb(93, 119, 44);
+    aspect-ratio: 1/1;
+    margin: 10% 10% 10% 10%;
+}
+
+.TopWork1{
+    margin-left: 67%;
+    background-size: 100%;
+    height: 33%;
+    width: 33%;
+    background-image: url("images/RecordProject/recordlogo.png");
+}
+
+.TopWork2{
+    margin-left: 67%;
+    background-size: 100%;
+    height: 33%;
+    width: 33%;
+    background-image: url("images/RecordProject/recordlogo.png");
+}
+
+.TopWork3{
+    margin-left: 67%;
+    background-size: 100%;
+    height: 33%;
+    width: 33%;
+    background-image: url("images/RecordProject/recordlogo.png");
+}
+
+
+
+
+
+
+.Top1Animation{
+    animation: T1A 1s ease-in-out forwards;
+}
+@keyframes T1A{
+    100%{
+        margin-left:  0%;
+    }
+}
+
+
+.Top2Animation{
+    animation: T2A 1s ease-in-out forwards;
+}
+@keyframes T2A{
+    100%{
+        margin-left:  0%;
+    }
+}
+
+.Top3Animation{
+    animation: T3A 1s ease-in-out forwards;
+}
+@keyframes T3A{
+    100%{
+        margin-left:  0%;
+    }
+}
+
+
+.Top1Reset{
+    animation: T1R 1s ease-in-out forwards;
+}
+@keyframes T1R{
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 67%;
+    }
+}
+
+.Top2Reset{
+    animation: T2R 1s ease-in-out forwards;
+}
+@keyframes T2R{
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 67%;
+    }
+}
+
+.Top3Reset{
+    animation: T3R 1s ease-in-out forwards;
+}
+@keyframes T3R{
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 67%;
+    }
+}
