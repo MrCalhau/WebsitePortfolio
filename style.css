@@ -1,99 +1,66 @@
-.TopWork{
-    background-color: rgb(93, 119, 44);
+.testsquare{
+    width: 10%;
+    margin-left: 90%;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(226, 11, 11, 0.938);
     aspect-ratio: 1/1;
-    margin: 10% 10% 10% 10%;
 }
 
-.TopWork1{
-    margin-left: 67%;
-    background-size: 100%;
-    height: 33%;
-    width: 33%;
-    background-image: url("images/RecordProject/recordlogo.png");
+.anigo{
+    animation: back 1s ease-in-out forwards;
+   
 }
 
-.TopWork2{
-    margin-left: 67%;
-    background-size: 100%;
-    height: 33%;
-    width: 33%;
-    background-image: url("images/RecordProject/recordlogo.png");
+.aniback{
+    animation: go 1s ease-in-out forwards;
 }
 
-.TopWork3{
-    margin-left: 67%;
-    background-size: 100%;
-    height: 33%;
-    width: 33%;
-    background-image: url("images/RecordProject/recordlogo.png");
-}
-
-
-
-
-
-
-.Top1Animation{
-    animation: T1A 1s ease-in-out forwards;
-}
-@keyframes T1A{
-    100%{
-        margin-left:  0%;
-    }
-}
-
-
-.Top2Animation{
-    animation: T2A 1s ease-in-out forwards;
-}
-@keyframes T2A{
-    100%{
-        margin-left:  0%;
-    }
-}
-
-.Top3Animation{
-    animation: T3A 1s ease-in-out forwards;
-}
-@keyframes T3A{
-    100%{
-        margin-left:  0%;
-    }
-}
-
-
-.Top1Reset{
-    animation: T1R 1s ease-in-out forwards;
-}
-@keyframes T1R{
+@keyframes back {
     0%{
-        margin-left: 0%;
+        width: 10%;
+        margin-left: 90%;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(226, 11, 11, 0.938);
+        aspect-ratio: 1/1;
+    }
+    50%{
+        margin-top: 50%;
     }
     100%{
-        margin-left: 67%;
+        margin-top: 50%;
+        animation: back 1s ease-in-out forwards;
+        width: 10%;
+        margin-left: 0%;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(226, 11, 11, 0.938);
+        aspect-ratio: 1/1;
     }
+    
 }
 
-.Top2Reset{
-    animation: T2R 1s ease-in-out forwards;
-}
-@keyframes T2R{
+@keyframes go {
     0%{
+        width: 10%;
+        margin-top: 50%;
         margin-left: 0%;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(226, 11, 11, 0.938);
+        aspect-ratio: 1/1;
+    }
+    50%{
+        margin-top: 50%;
     }
     100%{
-        margin-left: 67%;
+        width: 10%;
+        margin-left: 90%;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(226, 11, 11, 0.938);
+        aspect-ratio: 1/1;
     }
-}
-
-.Top3Reset{
-    animation: T3R 1s ease-in-out forwards;
-}
-@keyframes T3R{
-    0%{
-        margin-left: 0%;
-    }
-    100%{
-        margin-left: 67%;
-    }
+    
 }
