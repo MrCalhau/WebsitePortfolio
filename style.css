@@ -1,3 +1,188 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.background{
+    width: 100%;
+    aspect-ratio: 1/1.2;
+    margin: 0;
+    background-image: url("images/BACKGROUND/BACKGROUND1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.ProjGrid{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+}
+
+.textbox{
+    margin: 0% 0% 0% 50%;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    padding: 5% 5% 5% 5%;
+ 
+}
+
+.title{
+    font-size: 200%;
+}
+.paragraph{
+    margin-top: 0%;
+}
+
+.TopProjTab{
+    background-color: rgba(110, 17, 196, 0);
+    height: 100%;
+    margin: 10% 10% 10% 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    display: flex;
+    
+}
+
+.TopProj1, .TopProj2, .TopProj3{
+    background-color: pink;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1920/1080;
+    opacity: 90%;
+}
+
+.TopProj1{
+    background-image: url("images/installations/PLANETARIO.png");
+    
+    
+}
+
+.TopProj2{
+    background-image: url("images/installations/RECORD.png");
+    
+}
+
+.TopProj3{
+    background-image: url("images/installations/BOX.png");
+    
+}
+
+.ProjRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Proj{
+    
+    margin: 2%;
+    
+    
+}
+
+.imagetype2{
+    flex: 1;
+    width: 100%;
+}
+
+
+
+
+
+
+.usbcollum{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.452);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.usbstick{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+
+    width: 30%;
+    aspect-ratio: 4/1;
+    transform: rotate(0deg);
+    margin: 20% 60%;
+    background-color: rgba(148, 235, 35, 0);
+    
+}
+
+
+
+.usbbody{
+    transform-origin: center;
+    height: 100%;
+    width: 75%;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.5s;
+}
+
+.usbbody:hover{
+    transform: scaleY(2)
+}
+
+.usbbody1, .usbbody2, .usbbody3{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(83, 83, 83);
+}
+.usbbody1{
+    border-radius: 20% 0% 0% 20%;
+    -moz-border-radius: 20% 0% 0% 20%;
+    -webkit-border-radius: 20% 0% 0% 20%;
+}
+
+.usbbody3{
+    
+    border-radius: 0% 10% 10% 0%;
+    -moz-border-radius: 0% 10% 10% 0%;
+    -webkit-border-radius: 0% 10% 10% 0%;
+}
+
+.usbport{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 70%;
+    width: 20%;
+    align-content: center;
+    background-color: rgb(173, 173, 173);
+    
+}
+
+.usbhole{
+    margin-right: 10%;
+    width: 15%;
+    background-color: rgb(75, 75, 75);
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
 .testsquare{
     width: 10%;
     margin-left: 90%;
@@ -63,4 +248,25 @@
         aspect-ratio: 1/1;
     }
     
+}
+
+
+
+
+
+
+
+.coltest{
+    width: 100%;
+    background-color: rgb(89, 0, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.tests{
+    width: 10%;
+    background-color: rgb(255, 0, 149);
 }
