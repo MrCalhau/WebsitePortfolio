@@ -11,10 +11,13 @@
 }
 
 .work_type_nav{
-
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.selected{
+    color:rgb(193, 193, 193);
 }
