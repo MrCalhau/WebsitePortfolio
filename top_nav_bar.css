@@ -14,9 +14,8 @@
 }
 
 .top_nav{
-
-    padding: 40px;
-    height: 50px;
+    padding: 0px 5% 0 5%;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -31,13 +30,11 @@
     justify-content: left;
     width: 100%;
     align-items: center;
-    height: 100%;
+    height: 50px;
     z-index: 1;
-    padding: 0 0px; 
 }
 
 .right_nav{
-
     display: flex;
     width: 100%;
     padding: 0 0 0 0;
@@ -58,7 +55,6 @@
 }
 
 .navbar_logo{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +63,22 @@
     height: 100%;
     color: #000;
     font-size: 1.6rem;
+
 }
+
+
+
+@media (max-width:400px){
+    .navbar_logo{
+        font-size: 1.1rem;
+    }
+
+    .navbar_link{
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
+    }
+}
+    
 
 
 

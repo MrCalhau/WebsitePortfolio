@@ -1,7 +1,7 @@
 
 
 .image_grid{
-    padding: 150px 100px 0 100px;
+    padding: 200px 100px 0 100px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 100px;
@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    justify-items: center;
 }
 
 .img_and_descript{
