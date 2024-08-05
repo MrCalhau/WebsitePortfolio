@@ -1,0 +1,38 @@
+
+
+.image_grid{
+    padding: 200px 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.img_and_descript{
+    margin: 0 0 0 0; /* Remove default margin */
+    padding: 10px; /* Remove default padding */
+    text-align: left; /* Align the caption text to the left */
+    max-width: 300px;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    aspect-ratio: 15/10;
+}
+
+
+.img_link{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.img_link:hover{
+    color: rgb(46, 43, 222);
+}
