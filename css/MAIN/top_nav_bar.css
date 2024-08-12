@@ -16,7 +16,7 @@ html {
 }
 
 .top_nav{
-    padding: 0px 8.3% 0 8.3%;
+    padding: 0px 10% 0 10%;
     height: 70px;
     width: 100%;
     display: flex;
@@ -68,7 +68,7 @@ html {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 0rem;
     height: 100%;
     color: #000;
     font-size: 1.6rem;
