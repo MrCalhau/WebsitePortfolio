@@ -36,3 +36,25 @@
 .img_link:hover{
     color: rgb(46, 43, 222);
 }
+
+.img_and_descript img {
+    transition: filter 0.5s ease; /* Smooth transition */
+    filter: blur(1px) contrast(90%) brightness(90%);
+}
+
+.img_and_descript img:hover {
+    filter: blur(0px) contrast(100%) brightness(100%);
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+    .img_and_descript img {
+        transition: none; /* Disable transition */
+        filter: blur(0px) contrast(100%) brightness(100%); /* Keep the original filter */
+    }
+    
+    /* Ensure no hover effect */
+    .img_and_descript img:hover {
+        filter: blur(0px) contrast(100%) brightness(100%);
+    }
+}
