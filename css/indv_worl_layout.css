@@ -6,14 +6,14 @@
 .workdate{
     font-size: 1.5rem;
     padding: 20px 100px 0 10%;
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
 }
 
 .image_grid{
 
-    padding: 50px 90px 120px 90px;
+    padding: 50px 10% 120px 10%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -24,17 +24,17 @@
 }
 
 .textbox{
-    margin:0;
-    padding: 60px; /* Remove default margin */
+    margin:50px 0 50px 10px;
+    padding: 0; /* Remove default margin */
     height: 100%;
-    max-width: 600px;
+    width: 100%;
     align-content: center;
     text-align: left;
 }
 
 .img_and_descript{
     margin: 0 0 0 0; /* Remove default margin */
-    text-align: left; /* Align the caption text to the left */
+    text-align: center; /* Align the caption text to the left */
     max-width: 600px;
     width: 100%;
 } 
@@ -67,21 +67,10 @@
     color: rgb(46, 43, 222);
 }
 
-@media (max-aspect-ratio:4/7){
-    .worktitle{
-        font-size: 1.5rem;
-        padding: 200px 0 0 50px;
-    }
-    .workdate{
-        font-size:1rem;
-        padding: 10px 50px 0 50px;
-    }
-}
 
 @media (max-aspect-ratio:7/6){
     .image_grid{
 
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         padding: 20px 0px 120px 0px;
         gap: 20px
     }
@@ -91,22 +80,28 @@
     .vid{
         width: 100%;
         height: auto;
-        max-width: 6000px;
         aspect-ratio: 3/2;
     }
     .img{
         width: 100%;
         height: auto;
-        max-width: 6000px;
         aspect-ratio: 3/2;
     }
     .textbox{
-        padding: 50px 40px 100px 40px ; /* Remove default margin */
+        padding: 20px 50px 50px 50px; /* Remove default margin */
         width: 100%;
-        max-width: 600px;
         align-content: center;
         text-align: left;
         font-size: 0.8rem;
         height: auto;
+    }
+
+    .worktitle{
+        font-size: 1.5rem;
+        padding: 200px 0 0 50px;
+    }
+    .workdate{
+        font-size:1rem;
+        padding: 10px 50px 0 50px;
     }
 }
