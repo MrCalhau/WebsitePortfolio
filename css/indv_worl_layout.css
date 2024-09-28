@@ -6,6 +6,7 @@
 .workdate{
     font-size: 1.5rem;
     padding: 20px 100px 0 10%;
+    background-color: pink;
 }
 
 .image_grid{
@@ -19,11 +20,11 @@
     text-align: center;
     justify-items: center;
     gap:20px
+
 }
 
 .textbox{
     margin:0;
-
     padding: 60px; /* Remove default margin */
     height: 100%;
     max-width: 600px;

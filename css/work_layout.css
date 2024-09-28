@@ -16,13 +16,13 @@
     margin: 0 0 0 0; /* Remove default margin */
     padding: 10px; /* Remove default padding */
     text-align: left; /* Align the caption text to the left */
-    max-width: 300px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 .img{
     width: 100%;
     height: auto;
-    max-width: 300px;
     aspect-ratio: 15/10;
 }
 
