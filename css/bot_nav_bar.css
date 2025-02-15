@@ -20,6 +20,7 @@
 }
 
 .navbar_link_bot{
+    font-weight: bold;
     transition: color 0.2s ease, font-size 0.2s ease;
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    color: #000;
+    color: #5a5a5a;
 }
 
 

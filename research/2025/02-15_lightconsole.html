@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="icon" href="../../webicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/top_nav_bar.css">
+    <link rel="stylesheet" href="../../css/bot_nav_bar.css">
+    <link rel="stylesheet" href="../../css/indv_worl_layout.css">
+</head>
+<body>
+    <header>
+        <nav class="main_tab">
+            <div class="top_nav">
+                <div class="left_nav">
+                    <li class="nav">
+                        <a href="/" class="navbar_logo">Hugo Aston</a>
+                    </li>
+                </div>
+                <div class="right_nav">
+                    <li class="nav">
+                        <a href="../../about_and_contacts.html" class="navbar_link">About</a>
+                    </li>
+                    <li class="nav">
+                        <a href="../../about_and_contacts.html" class="navbar_link">Contact</a>
+                    </li>
+                </div>
+            </div>
+            <div class="bot_nav">
+                <div class="work_type_nav">
+                    <li class="nav">
+                        <a href="../../lighting_work.html" class="navbar_link_bot">Lighting</a>
+                    </li>
+                    <li class="nav">
+                        <a href="../../exhibitions.html" class="navbar_link_bot">Exhibitions</a>
+                    </li>
+                    <li class="nav">
+                        <a href="../../3d_work.html" class="navbar_link_bot">3D</a>
+                    </li>
+                    <li class="nav">
+                        <a href="../../research.html" class="navbar_link_bot">Research</a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="worktitle">Custom Lighting Console (On Going)</div>
+        <p class="workdate">2024</p>
+        <div class="image_grid">
+            <div class="textbox">
+                <h2>Intro</h1>
+                <h5>15/02/2025 (last edited: 15/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>This project is the result of my pursuit of a lighting console that has all the features I'm looking for while remaining affordable. Funnily enough, I know what "affordable" means for me right now, but I don’t actually know what features I want. I might end up buying a console only to realize later that it doesn’t fit my needs.</p>
+                <p>Since I don’t currently have access to equipment I can test, building my own console—where I can tinker and discover what I like-seems both like a bad idea and a fun hands-on project!</p>
+                <div class="text_blankline"></div>
+                <p>Here are my goals for this project:</p>
+                <div class="text_blankline"></div>
+                <div class="text_tab_sim">
+                    <p>Building a functional and reliable console with plug-and-play features (no extra software, just MA2).</p>
+                    <p>Possibly adding extra fancy features, such as motorized faders and LEDs that respond to MA2 input through macros and Lua scripting.</p>
+                </div>
+                
+            </div>
+            <div class="img_and_descript">
+                <img src="https://f003.backblazeb2.com/file/website-images/research/2025/02-15_LightConsole/faderexemple1.jpg" alt="Image 1" class="img" >
+            </div>
+            <div class="textbox">
+                <h2>Step 1 - Arduino as Midi Device</h1>
+                <h5>15/02/2025 (last edited: 15/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>This might be one of the most important steps in making this console work without requiring any extra software to run on the host computer. Some Arduino boards, such as the Arduino Micro and Arduino Leonardo, can emulate a MIDI device thanks to their ATmega32U4 chip.</p>
+                <p>I decided to go with the Arduino Micro due to its smaller size.</p>
+                <p>With this setup, grandMA2 onPC successfully detects the Arduino as a MIDI device and is ready to receive MIDI notes from it. Plug and play just like originaly planned!</p>
+
+            </div>
+
+            <div class="textbox">
+                <h2>Notes for Future Me</h1>
+                <h5>15/02/2025 (last edited: 15/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>Understand Midi protocol for Ma2 for both input and output in conjuction with arduino code.</p>
+                <p>Power Supply Limitations.</p>
+                <p>Build quality for eletronics and usability study.</p>
+                <p>When to invest more money.</p>
+                
+            </div>
+         </div>
+    </main>
+</body>
+</html>
