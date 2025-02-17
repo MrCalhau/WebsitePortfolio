@@ -47,10 +47,10 @@
     </header>
     <main>
         <div class="worktitle">Custom Lighting Console (On Going)</div>
-        <p class="workdate">2024</p>
+        <p class="workdate">2025</p>
         <div class="image_grid">
             <div class="textbox">
-                <h2>Intro</h1>
+                <h2>Intro</h2>
                 <h5>15/02/2025 (last edited: 15/02/2025)</h5>
                 <div class="text_blankline"></div>
                 <p>This project is the result of my pursuit of a lighting console that has all the features I'm looking for while remaining affordable. Funnily enough, I know what "affordable" means for me right now, but I don’t actually know what features I want. I might end up buying a console only to realize later that it doesn’t fit my needs.</p>
@@ -67,16 +67,73 @@
             <div class="img_and_descript">
                 <img src="https://f003.backblazeb2.com/file/website-images/research/2025/02-15_LightConsole/faderexemple1.jpg" alt="Image 1" class="img" >
             </div>
+
             <div class="textbox">
-                <h2>Step 1 - Arduino as Midi Device</h1>
+                <h3>Patch Note 1.01 - Arduino as Midi Device</h3>
                 <h5>15/02/2025 (last edited: 15/02/2025)</h5>
                 <div class="text_blankline"></div>
                 <p>This might be one of the most important steps in making this console work without requiring any extra software to run on the host computer. Some Arduino boards, such as the Arduino Micro and Arduino Leonardo, can emulate a MIDI device thanks to their ATmega32U4 chip.</p>
                 <p>I decided to go with the Arduino Micro due to its smaller size.</p>
                 <p>With this setup, grandMA2 onPC successfully detects the Arduino as a MIDI device and is ready to receive MIDI notes from it. Plug and play just like originaly planned!</p>
-
             </div>
 
+            <div class="textbox">
+                <h2>Direction Update</h2>
+                <h5>16/02/2025 (last edited: 16/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>I’m questioning the use case of this lighting console. If I have an MA2 console to work with, I wouldn’t use it. I can use it with a computer, but my screen isn’t tactile, and I don’t plan on getting one. That means the console would be useless unless I design it to be fully independent of any touch-screen input. Features like color selection must be fully implemented within the console itself.</p>
+                <p>With this observation, the project has evolved into a much more complex problem-solving challenge.</p>
+                <p>Going forward, keep in mind that I’m building this console for concert settings, so I will design it specifically to facilitate that environment.</p>    
+            </div>
+
+            <div class="textbox">
+                <h3>Patch Note 2.01 - Color</h3>
+                <h5>16/02/2025 (last edited: 17/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>Well, implementing controls for all a fixture’s features is going to be crazy. So let’s start simple! (jk) </p>
+                <p>Color might be a great opportunity to design an entirely new system. By applying color theory, I can minimize the space this parameter occupies while keeping it efficient. My idea is to use one button and two knobs to control four simultaneous color selections.</p>
+                <p>Again, keep in mind that this is for concert use, so the main priority is an efficient way to select colors that complement each other well.</p>
+                <p>I'm going to label the button "Mode" and the two knobs "Direction" and "Spread," respectively. The "Mode" button will switch between preprogrammed modes. So far, I’ve thought of two.</p>
+            </div>
+
+            <div class="textbox">
+                <h4>Color Mode 1</h4>
+                <div class="text_blankline"></div>
+                <p>All these "Modes" will produce four colors.</p>
+                <P>In Mode 1, the Direction knob controls colors A and B simultaneously. A and B are always polar opposites on the color wheel, for example if A is red (255,0,0) B will be cyan (0,255,255). Colors C and D will copy B, cyan, but the Spread knob will adjust their positions by mirroring from B.</P>
+                <P>This system allows for quick selection of four colors that follow color theory principles, ensuring aesthetically pleasing looks for concerts.</P>
+                <div class="text_blankline"></div>
+                <h4>Color Mode 2</h4>
+                <div class="text_blankline"></div>
+                <P>Just like in Mode 1 in Mode 2, the Direction knob controls colors A and B simultaneously. A and B are always polar opposites on the color wheel. Colors C will copy A and D will copy B and the Spread knob will adjust their positions by sliding them clock wise in the color wheel.</P>
+            </div>
+
+            <div class="img_and_descript">
+                <img src="https://f003.backblazeb2.com/file/website-images/research/2025/02-15_LightConsole/colormode1.jpg" alt="Image 1" class="img" >
+            </div>
+
+            <div class="textbox">
+                <h3>Patch Note 2.02 - Color To MA2</h3>
+                <h5>17/02/2025 (last edited: 17/02/2025)</h5>
+                <div class="text_blankline"></div>
+                <p>I have been testing this method with some faders instead of knobs. It works pretty well, and I can use the Arduino to efficiently calculate the colors of A, B, C, and D. However, now I need to decide how to send this data to ONPC MA2. Since this communication happens through MIDI, I need to determine how much data I can push out at a time, as this will define how complex this feature can be.</p>
+                <div class="text_blankline"></div>
+                <p>Before moving forward, it’s important to note that alongside these two knobs and a button, there will also be four buttons representing colors A, B, C, and D. There will be additional buttons for white, amber, and UV light, but they are not relevant at this stage.</p>
+                <div class="text_blankline"></div>
+                <p>In MA2, heavy use of presets are the backbone of the software, but I'm are diverging from the traditional approach slightly. With this method, at any given time, we will only have four color presets (Color A, B, C, and D).</p>
+            </div>
+
+            <div class="textbox">
+                <h4>Foreseen utility without Midi limitations:</h4>
+                <div class="text_blankline"></div>
+                <p>Efficient and quick selection of color combinations without worrying about less optimal color palettes.</p>
+                <p>Ability to create a color palette using any color in the RGB spectrum, no longer limited to primary and secondary colors.</p>
+                <p>Smooth live color palette transitions mid-song without blackouts, undesirable color combinations, or confusion.</p>
+                <p>Simplicity in live operation, making it easy to use in real-time performances.</p>
+                <p>No pre-setup required. Color presets can be created on the fly without prior programming.</p>
+
+            </div>
+          
             <div class="textbox">
                 <h2>Notes for Future Me</h1>
                 <h5>15/02/2025 (last edited: 15/02/2025)</h5>
@@ -85,6 +142,7 @@
                 <p>Power Supply Limitations.</p>
                 <p>Build quality for eletronics and usability study.</p>
                 <p>When to invest more money.</p>
+                <p>in color selection remmember there is Amber, White, UV and other to consider and color wheel instead of RGB</p>
                 
             </div>
          </div>
