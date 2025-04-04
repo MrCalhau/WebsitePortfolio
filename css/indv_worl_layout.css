@@ -1,26 +1,23 @@
 .worktitle{
-    padding: 200px 0 0 10%;
-    font-size: 2rem;
+    padding: 30vh 0 0 5vw;
+    font-size: 3vh;
 
 }
 
 .workdate{
-    font-size: 1.5rem;
-    padding: 20px 100px 0 10%;
+    font-size: 2vh;
+    padding: 0.5vw 1vw 1vw 5vw;
 
 }
 
 .textbox{
-
-    margin:50px 30px 50px 0px;
-    max-width: 800px;
-    min-height: 100px;
+    margin: 3vw 5vw 3vw 0vw;
+    min-height: 10vw;
     align-content: left;
     justify-self: baseline;
     align-self: self-start;
     text-align: justify;
-    text-indent: 5px;
-    margin-left: 2%;
+    font-size: 2vh;
 }
 
 
@@ -31,18 +28,19 @@
 
 
 .image_grid{
-
     height: auto;
     width: auto;
-    padding: 50px 100px 120px 100px;
+    padding: 1vw 5vw 1vw 5vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-    gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 2vw;
     justify-content: center;
     align-items: center;
     text-align: center;
     justify-items: center;
 }
+
+
 
 
 .img_and_descript{
@@ -53,8 +51,8 @@
 .img{
     width: 100%;
     height: auto;
-    aspect-ratio: 15/10;
-    border-radius: 15px;
+    aspect-ratio: 3/2;
+    border-radius: 1.5vw;
 }
 
 
@@ -62,8 +60,9 @@
     width: 100%;
     height: auto;
     aspect-ratio: 15/10;
-    border-radius: 15px;
+    border-radius: 1.5vw;
 }
+
 
 
 
@@ -82,16 +81,65 @@
     
 
     .image_grid{
-        padding: 80px 0px 120px 0px;
-        grid-template-columns: none
+        gap: 4vh;
+        padding: 4vh 0px 5vh 0;
+        grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
         
     }
 
     .textbox{
 
-        margin:50px 10% 50px 10%;
+        margin: 6vh 5vw 5vh 7vh;
         min-height: 100px;
         align-content: center;
         text-align: left;
+}
+    .worktitle{
+        padding: 30vh 0 0 7vh;
+        font-size: 3vh;
+        
+
+}
+
+    .workdate{
+        font-size: 2vh;
+        padding: 0.5vh 1vh 1vh 7vh;
+
+}
+}
+
+
+@media (max-aspect-ratio: 1/1.5) {
+    .image_grid{
+        padding: 20vw 0px 15vw 0px;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
+        font-size: 1.5vh;
+    }
+    .img_and_descript{
+        text-align: center;
+    }
+    .img{
+        border-radius: 0;
+    }
+        
+    
+    .img_and_descript img:hover {
+            filter: blur(0px) contrast(100%) brightness(100%);
+    }
+    .worktitle{
+        padding: 30vh 0 0 4vh;
+        font-size: 3vh;
+}
+
+    .workdate{
+        font-size: 2vh;
+        padding: 0.5vh 1vh 1vh 4vh;
+}
+.textbox{
+    margin: 6vh 4vw 5vh 4vh;
+    min-height: 100px;
+    align-content: center;
+    text-align: left;
 }
 }

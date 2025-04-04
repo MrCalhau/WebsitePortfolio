@@ -1,18 +1,16 @@
 .bot_nav{
     width: 100%;
-    background-color:rgb(252, 252, 252);
     display: flex;
     justify-content: left;
     align-items: center;
     top: 0;
     list-style: none;
-    padding: 5px 0px 5px 0px;
+    padding: 1vw 0px 2vw 0px;
 }
 
 .work_type_nav{
     display: flex;
     width: 100%;
-    height: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -20,13 +18,14 @@
 }
 
 .navbar_link_bot{
-    font-weight: bold;
     transition: color 0.2s ease, font-size 0.2s ease;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    font-size: 2.5vw;
+    padding: 0 1vw;
     height: 100%;
     color: #5a5a5a;
 }
@@ -39,29 +38,29 @@
 .navbar_link_bot:hover{
     transition: color 0.5s ease, font-size 0.5s ease;
     color: rgb(46, 43, 222);
-    font-size: 1.1rem;
-    padding: 0 0.8rem 0 0.8rem;
+    font-size: 2.3vw;
+    padding: 0 1vw 1vw;
 }
 
 
-@media (max-aspect-ratio:6/7){
+@media (min-aspect-ratio:1/1){
+
+    .bot_nav{
+        padding: 1vh 0 5vh 0;
+    }
 
     .navbar_link_bot{
-        font-size: 0.7rem;
-        padding: 0 0.4rem;
+        transition: color 0.5s ease, font-size 0.5s ease;
+        font-size: 2.2vh;
+        padding: 0 1vh;
     }
     .navbar_link_bot:hover{
+        transition: color 0.5s ease, font-size 0.5s ease;
         color: rgb(119, 119, 119);
-        font-size: 0.7rem;
-        padding: 0 0.4rem;
+        font-size: 2.3vh;
+        padding: 0 1vh;
     }
     .bot_nav{
-        width: 100%;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        top: 0;
-        list-style: none;
-        padding: 0px 0px 0px 0px;
+        padding: 1vh 0px 2vh 0px;
     }
 }

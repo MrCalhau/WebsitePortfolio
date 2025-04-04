@@ -3,27 +3,30 @@
 .image_grid{
     height: auto;
     width: auto;
-    padding: 160px 100px 120px 100px;
+    padding: 20vw 5vw 15vw 5vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 3vw;
     justify-content: center;
     align-items: center;
     text-align: center;
     justify-items: center;
+    font-size: 1.7vh;
 }
 
 
 .img_and_descript{
     width: 100%;
+    align-items: start;
     text-align: left;
 }
 
 .img{
+    margin-bottom: 0.4vw;
     width: 100%;
     height: auto;
-    aspect-ratio: 15/10;
-    border-radius: 10px;
+    aspect-ratio: 3/2;
+    border-radius: 1.5vw;
 }
 
 
@@ -51,33 +54,40 @@
 
 
 
-@media (max-aspect-ratio: 1/1.5) {
-    .img_and_descript img {
-        padding: 0px 0px 0px 0px;
-        transition: none;
-        filter: blur(0px) contrast(100%) brightness(100%);
-        border-radius: 0px;
-    }
 
+@media (min-aspect-ratio: 1/1) {
+
+.image_grid{
+    padding: 20vh 10vh 15vh 10vh;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    gap: 3vh;
+}
+.img{
+    margin-bottom: 0.4vh;
+    border-radius: 1.5vh;
+}
+
+}
+
+@media (max-aspect-ratio: 1/1.5) {
+    .image_grid{
+        padding: 20vw 0px 15vw 0px;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
+        font-size: 1.5vh;
+    }
     .img_and_descript{
         text-align: center;
     }
-    
-
-    .img_and_descript img:hover {
-        filter: blur(0px) contrast(100%) brightness(100%);
+    .img{
+        border-radius: 0;
     }
-    .image_grid{
-        padding: 150px 0px 120px 0px;
-        grid-template-columns: none
         
+    
+    .img_and_descript img:hover {
+            filter: blur(0px) contrast(100%) brightness(100%);
     }
 }
-
-/*
-@media (max-aspect-ratio:7/6){
-    .image_grid{
-        padding: 150px 100px 120px 100px;
-    }
-}
-*/
+    
+    
