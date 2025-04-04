@@ -11,7 +11,7 @@ html {
 
 .main_tab{
     background-color:rgb(245, 245, 245);
-    padding-top: 3vw;
+    padding-top: 4vw;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -19,7 +19,7 @@ html {
 
 .top_nav{
 
-    padding: 0 10vw 1vw 10vw;
+    padding: 0 10vw 2vw 10vw;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -56,14 +56,14 @@ html {
     padding: 0 1vw;
     height: 100%;
     color: #000000;
-    font-size: 2.6vw;
+    font-size: 3vw;
 }
 
 .navbar_link:hover{
     transition: color 0.5s ease;
     color: rgb(46, 43, 222);
     padding: 0 1vw;
-    font-size: 2.3vw;
+    font-size: 3.2vw;
     
 }
 
@@ -104,6 +104,12 @@ html {
     .navbar_logo{
         font-size: 4vh;
     
+    }
+
+    .top_nav{
+
+        padding: 0 10vw 1vw 10vw;
+
     }
 }
 

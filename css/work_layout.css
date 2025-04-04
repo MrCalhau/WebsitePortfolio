@@ -8,7 +8,7 @@
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
     gap: 3vw;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
     justify-items: center;
     font-size: 1.7vh;
@@ -72,8 +72,10 @@
 
 @media (max-aspect-ratio: 1/1.5) {
     .image_grid{
-        padding: 20vw 0px 15vw 0px;
+        padding: 25vw 0px 15vw 0px;
         width: 100%;
+        align-items: start;
+        gap: 5vw;
         grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
         font-size: 1.5vh;
     }
