@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;}
 
 .main_tab{
-    background-color:rgb(245, 245, 245);
+    background-color:rgb(250, 250, 250);
     padding-top: 4vw;
     width: 100%;
     position: fixed;
@@ -19,11 +19,11 @@ html {
 
 .top_nav{
 
-    padding: 0 10vw 2vw 10vw;
+    padding: 0 10vw 0vw 10vw;
     width: 100%;
     display: flex;
     justify-content: left;
-    align-items: baseline;
+    align-items: center;
     list-style: none;
 }
 
@@ -32,13 +32,12 @@ html {
     display: flex;
     justify-content: left;
     width: 100%;
-    align-items: center;
+    align-items:center;
     z-index: 1;
 
 }
 
 .right_nav{
-
     display: flex;
     justify-content: right;
     width: 100%;
@@ -49,6 +48,7 @@ html {
 
 .navbar_link{
     transition: color 0.2s ease;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,16 +68,13 @@ html {
 }
 
 .navbar_logo{
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    height: 100%;
-    color: #343434;
-    font-size: 4vw;
+    width: 13vw;
+    height: auto;
+    aspect-ratio: 2/1;
 
 }
+
+
 
 .navbar_logo:hover{
     transition: color 0.2s ease;
@@ -102,13 +99,15 @@ html {
     }
 
     .navbar_logo{
-        font-size: 4vh;
-    
+        width: 8vw;
+
+        height: auto;
+        aspect-ratio: 2/1;
     }
 
     .top_nav{
 
-        padding: 0 10vw 1vw 10vw;
+        padding: 0 10vw 0vw 10vw;
 
     }
 }
@@ -126,7 +125,7 @@ html {
   
 @media (max-aspect-ratio: 1/1.5) {
     .main_tab{
-        padding-top: 6vw;
+        padding-top: 2vh;
 
     }
 }
