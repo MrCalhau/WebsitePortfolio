@@ -113,6 +113,16 @@ html {
     }
 }
 
+.custom-link {
+    text-decoration: none; /* removes underline */
+    color: #535252; /* change to any color you prefer */
+  }
+
+.custom-link:hover{
+    color: #d1d1d1;
+}
+  
+
   
 @media (max-aspect-ratio: 1/1.5) {
     .main_tab{

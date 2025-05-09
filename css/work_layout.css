@@ -38,7 +38,7 @@
 
 .img_link:hover{
     transition: color 0.2s ease;
-    color: rgb(48, 45, 209);
+    color: rgb(150, 150, 150);
 }
 
 .img_and_descript img { 
@@ -60,7 +60,7 @@
 .image_grid{
     padding: 20vh 10vh 15vh 10vh;
     align-items: start;
-    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
     gap: 3vh;
 }
 .img{

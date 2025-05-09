@@ -108,6 +108,17 @@
 }
 }
 
+.img_link{
+    list-style: none;
+    text-decoration:underline;
+    color: #272727;
+}
+
+.img_link:hover{
+    transition: color;
+    color: rgb(175, 175, 175);
+}
+
 
 @media (max-aspect-ratio: 1/1.5) {
     .image_grid{
@@ -142,4 +153,5 @@
     align-content: center;
     text-align: left;
 }
+
 }
