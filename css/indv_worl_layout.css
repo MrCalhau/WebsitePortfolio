@@ -31,7 +31,7 @@
     
     height: auto;
     width: auto;
-    padding: 1vw 5vw 1vw 5vw;
+    padding: 1vw 5vw 20vw 5vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
     gap: 2vw;
