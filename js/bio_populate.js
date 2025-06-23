@@ -1,7 +1,7 @@
 function populateBio() {
   const bioContainerMobile = document.querySelector('.mobile_bio');
-  const contactsContainerMobile = document.querySelector('.mobile_contacts_box');
   const bioContainerDesktop = document.querySelector('.desktop_bio');
+  const contactsContainerMobile = document.querySelector('.mobile_contacts_box');
 
   if (!bioContainerMobile && !bioContainerDesktop) {
     console.error('Error: No bio containers found!');
@@ -27,14 +27,8 @@ function populateBio() {
     container.appendChild(bio_container);
   }
 
-  // Fill bio parts
-  if (bioContainerMobile) fillBio(bioContainerMobile);
-  if (bioContainerDesktop) fillBio(bioContainerDesktop);
-
-  // Clear and fill contacts only once
-  if (contactsContainerMobile) {
-    contactsContainerMobile.innerHTML = '';
-
+  // Helper: create a new contact_links div
+  function createContactsDiv() {
     const contactDiv = document.createElement('div');
     contactDiv.className = 'contact_links';
 
@@ -58,6 +52,20 @@ function populateBio() {
     contactDiv.appendChild(instaLink);
     contactDiv.appendChild(emailLink);
 
-    contactsContainerMobile.appendChild(contactDiv);
+    return contactDiv;
+  }
+
+  // Fill bio text
+  if (bioContainerMobile) fillBio(bioContainerMobile);
+  if (bioContainerDesktop) fillBio(bioContainerDesktop);
+
+  // Clear & fill contacts in each container separately
+  if (contactsContainerMobile) {
+    contactsContainerMobile.innerHTML = '';
+    contactsContainerMobile.appendChild(createContactsDiv());
+  }
+
+  if (bioContainerDesktop) {
+    bioContainerDesktop.appendChild(createContactsDiv());
   }
 }

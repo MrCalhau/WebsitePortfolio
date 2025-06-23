@@ -32,11 +32,12 @@ body::before {
   z-index: 1000;          /* ensure it stays on top if needed */
   color: white;         /* spacing inside panel */
   box-sizing: border-box;
+  transform: translateX(-32vw);
    transition: transform 0.4s ease;
 }
 
 .desktop_bio_search.active {
-  transform: translateX(-32vw);
+  transform: translateX(0vw);
 }
 
 .desktop_bio_search.fullclose {
@@ -233,7 +234,7 @@ body::before {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  align-items: center;
+  align-items: start;
 
 }
 
@@ -278,19 +279,27 @@ body::before {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(0.5rem, 2dvh, 0.8rem);
   margin-bottom: 2dvh;
+  margin: 0;
+  padding-bottom: 2dvh;
 }
 
 /* Contact links container: full width, flex row, justify edges */
 .mobile_contacts_box {
   display: flex;
-  justify-content: space-evenly;
+  width: 25vw;
   gap: 4vw;
   margin-top: 6vh;
 }
 
+.contact_links{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* Contact icons: scale down nicely */
 .mobile_contacts_box img {
-  width: 12vw;  /* adjust size as needed */
+  width: 8vw;  /* adjust size as needed */
   height: auto;
   opacity: 0.5;
   filter: brightness(0) invert(1);  /* turn black to grayish */
@@ -356,7 +365,7 @@ body::before {
   display: flex;
   align-items: center;
   gap: 1.5vw;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
    font-size: clamp(0.8rem, 3vw, 4rem);
   color: rgb(153, 153, 153);
   cursor: pointer;

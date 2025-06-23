@@ -200,7 +200,7 @@ const projectsList = [
         { title: 'Em Nome Do Centro V2', 
         subtitle: "brussels planetarium poetry fest, 2024",
         searchkeys: 'installations 3d art', 
-        filters: ['installation'],  
+        filters: ['installation','motion graphics'],  
         images: [
                 'https://f003.backblazeb2.com/file/website-images/exhibitions/2024/12-10_brusselspoetryfest/capture2.jpg',
                 'https://f003.backblazeb2.com/file/website-images/exhibitions/2024/12-10_brusselspoetryfest/poetryfest01.jpg',
@@ -278,7 +278,7 @@ const projectsList = [
         { title: 'Perfume Ad', 
         subtitle: "product promo video, 2024",
         searchkeys: 'installations 3d art animation', 
-        filters: ['3dwork'],  
+        filters: ['motion graphics'],  
         images: [
                 'https://f003.backblazeb2.com/file/website-images/3d/2024/PerfumeAd/perfume.1.0.jpg',
                 'https://f003.backblazeb2.com/file/website-images/3d/2024/PerfumeAd/perfume.1.1.jpg',
@@ -327,7 +327,7 @@ const projectsList = [
         { title: 'Em Nome do Centro V1', 
         subtitle: "porto planetarium, 2024",
         searchkeys: 'installations 3d art', 
-        filters: ['installation'],   
+        filters: ['installation','motion graphics'],   
         images: [
                 'https://f003.backblazeb2.com/file/website-images/exhibitions/2024/06-00_planetarioporto/planet%C3%A1rioporto1.1.jpg',
                 'https://f003.backblazeb2.com/file/website-images/exhibitions/2024/06-00_planetarioporto/2024_EmNome_Img.jpg',
@@ -397,7 +397,7 @@ const projectsList = [
         { title: 'In time V2', 
         subtitle: "3d animation, 2024",
         searchkeys: '3d art animation', 
-        filters: ['3dwork'],  
+        filters: ['motion graphics'],  
         images: [
                 'https://f003.backblazeb2.com/file/website-images/3d/2024/InTimePart2/2024_InTimePart2_Img2.jpg',
                 'https://f003.backblazeb2.com/file/website-images/3d/2024/InTimePart2/2024_InTimePart2_Img3.jpg',
@@ -425,7 +425,7 @@ const projectsList = [
         { title: 'In Time V1', 
         subtitle: "3d animation, 2024",
         searchkeys: '3d art animation', 
-        filters: ['3dwork'],  
+        filters: ['motion graphics'],  
         images: [
                 'https://f003.backblazeb2.com/file/website-images/3d/2023/InTime/2023_InTime_Img.JPG',
                 'https://f003.backblazeb2.com/file/website-images/3d/2023/InTime/2023_InTime_Img2.JPG',
