@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  padding: 0;
+  background-color: rgb(41, 41, 41);
+  height: 100dvh;
+  width: 100vw;
+}
+
+#work {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*  _                 _                          
+ | |               | |                         
+ | | __ _ _ __   __| |___  ___ __ _ _ __   ___ 
+ | |/ _` | '_ \ / _` / __|/ __/ _` | '_ \ / _ \
+ | | (_| | | | | (_| \__ \ (_| (_| | |_) |  __/
+ |_|\__,_|_| |_|\__,_|___/\___\__,_| .__/ \___|
+                                   | |         
+                                   |_|   /*/
+
+
+
+
+
+
+
+#work .scroll_container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100dvh;
+  padding-left: 20VW;
+  
+}
+
+
+.work_grid {
+  height: 100dvh;
+  margin: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, auto);
+  
+  align-content: center;
+  justify-content: start;
+  gap: 6dvh;
+}
+
+
+
+.img {
+  height: 20dvh;
+}
+
+
+
+
+
+
+
+
+
+
+.work_img_container {
+    position:relative;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    
+}
+
+.work_img {
+    display: block;
+    height: 25dvh;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: brightness(50%) grayscale(90%) blur(3px);
+}
+
+
+/* Overlay container - unchanged */
+.work_img_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+/* Title */
+.work_title {
+  font-size: clamp(1rem, 4vh, 4rem);
+  color: white;
+  opacity: 0.8;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  padding: 0 2dvh;
+}
+
+/* Subtitle */
+.work_subtitle {
+  font-size: clamp(0.5rem, 1.5vh, 1rem);
+  color: white;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin-top: 0.5vh;
+  padding: 0 2dvh;
+}
+
+/* Hover: hide title + subtitle when container is hovered */
+.work_img_container:hover .work_title,
+.work_img_container:hover .work_subtitle {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+
+
+.work_img_container:hover {
+    transform: scale(1.1);
+}
+
+
+
+.work_img_container:hover .work_img {
+    filter: brightness(100%);
+    transform: scale(1.03);
+    border-radius: 2px;
+}
+
+.doc_window_button_area:hover .doc_window_button{
+    width: 1.2dvh;
+    height: 20dvh;
+    background-color: rgb(255, 255, 100);
+    transition: all 0.3s ease;
+}
+
+
+/*                  _             _ _   
+                 | |           (_) |  
+  _ __  _ __ ___ | |_ _ __ __ _ _| |_ 
+ | '_ \| '__/ _ \| __| '__/ _` | | __|
+ | |_) | | | (_) | |_| | | (_| | | |_ 
+ | .__/|_|  \___/ \__|_|  \__,_|_|\__|
+ | |                                  
+ |_| */
+
+
+@media (max-aspect-ratio: 1/1) {
+  /* Just for testing — optional */
+
+  /* Allow vertical scrolling for portrait/narrow screens */
+ #work .scroll_container {
+    overflow-x: hidden;   /* No horizontal scroll needed now */
+    overflow-y: auto;     /* Allow vertical scroll */
+    height: 100dvh;
+    padding-left: 0;
+  }
+
+  /* Switch grid to flow vertically in multiple columns */
+  .work_grid {
+    height: auto;  /* Let it grow naturally with content */
+    margin: 4vh;   /* Optional: add some margin */
+    display: grid;
+    grid-auto-flow: row;  /* Flow items top to bottom */
+    grid-template-columns: repeat(2, auto);  /* 2 columns for portrait screens */
+    align-content: start;  /* Align items to the top */
+    justify-content: center; /* Center the grid horizontally */
+    gap: 6vw;  /* Horizontal & vertical gap */
+    padding-bottom: 30dvh;
+  }
+
+  /* Adjust image size for narrower screens if you want */
+  .work_img {
+    height: 25vw; /* same or tweak for mobile */
+  }
+
+  /* Optional: adjust container scale on hover if needed */
+  .work_img_container:hover {
+    transform: scale(1.05);
+  }
+
+  .work_title {
+  font-size: clamp(0.8rem, 3vw, 4rem);
+  color: white;
+  opacity: 0.8;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  padding: 0 2dvh;
+}
+
+.work_subtitle {
+  font-size: clamp(0.4rem, 1.5vw, 1rem);
+  color: white;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin-top: 0.5vh;
+  padding: 0 2dvh;
+}
+}
+
+
+
+.scroll_container{
+    scrollbar-width: 10px;            /* "auto", "thin", or "none" */
+  scrollbar-color: rgb(255, 255, 100) rgba(255, 255, 100, 0);       /* thumb color, track color */
+}
+
+
+/* For Chrome, Edge, Safari */
+.scroll_container::-webkit-scrollbar {
+  width: 8px;    /* vertical scrollbar */
+  height: 8px;   /* horizontal scrollbar */
+}
+
+.scroll_container::-webkit-scrollbar-track {
+  background: rgb(255, 255, 100);  /* track background */
+}
+
+.scroll_container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 100);    /* thumb color */
+  border-radius: 4px;
+}

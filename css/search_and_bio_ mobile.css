@@ -1,0 +1,404 @@
+
+
+
+body::before {
+  content: "";
+  position: fixed; /* ✅ stays in place when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  filter: blur(2px);
+  background: url('../assets/Light_Vertical_Transparent.png') no-repeat center center;
+  background-size: contain; /* or 'cover' if you want it bigger */
+  opacity: 0.0; /* adjust to taste */
+  z-index: -1; /* ✅ behind all content */
+  pointer-events: none; /* ✅ ensures no blocking clicks */
+}
+
+
+
+
+
+.desktop_bio_search {
+  position: fixed;        /* ✅ stays pinned when scrolling */
+  top: 0;
+  left: 0;
+  height: 100dvh;          /* ✅ full viewport height */
+  display: flex;          /* ✅ split left and right */
+  background-color: rgba(77, 77, 77, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;          /* ensure it stays on top if needed */
+  color: white;         /* spacing inside panel */
+  box-sizing: border-box;
+   transition: transform 0.4s ease;
+}
+
+.desktop_bio_search.active {
+  transform: translateX(-50vw);
+}
+
+.desktop_bio_search.fullclose {
+  transform: translateX(-80vw);
+}
+
+.desktop_bio {
+  padding: 5dvh 0 3dvh 0;
+
+  width: 48vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.desktop_bio p {
+  padding:0 2dvh 0 10dvh;
+
+    color: white;
+     opacity: 0.6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1.5dvh, 1rem);
+  margin-bottom: 1dvh;
+}
+
+/* Contact links container: full width, flex row, justify edges */
+.desktop_bio .contact_links {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 4vh;
+  margin-top: 2vh;
+  margin-left: 10vh;
+}
+
+/* Contact icons: scale down nicely */
+.desktop_bio .contact_links img {
+  width: 10vh;  /* adjust size as needed */
+  height: auto;
+  opacity: 0.5;
+  filter: brightness(0) invert(1);  /* turn black to grayish */
+}
+
+.desktop_search{
+  width: 13vw;
+  max-width: 200px;
+  margin-left: 4vw;
+  height: 100dvh;
+}
+
+.desktop_search .search_input {
+  width: 13vw;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5dvh;
+  padding-bottom: 3dvh;
+}
+
+
+.desktop_search .search_input input[type="text"] {
+  width: 100%;
+  padding: 1.5dvh 3dvh;
+  font-size: clamp(1rem, 1.5dvh, 1rem);
+  border: 2px solid #66666680;
+  border-radius: 5dvh;      /* rounded pill shape */
+  background-color: #222;   /* dark background */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desktop_search .search_input input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.desktop_search .search_input input[type="text"]:focus {
+  border-color: rgb(255, 255, 100);
+  box-shadow: 0 0 8px rgb(255, 255, 100, 0.7);
+}
+
+
+/* Container holding the filter buttons — make it flex */
+.desktop_search .search_filter_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5dvh;           /* spacing between toggles */
+  justify-content: left; /* center horizontally */
+  flex-wrap: wrap;     /* wrap to next line if needed */
+  padding: 1.5dvh 0;     /* optional side padding */
+}
+
+/* Filter button styles */
+.desktop_search .filter-button {
+  display: flex;
+  align-items: center;
+  gap: 1dvh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 1.5dvh, 1rem);
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Hide native checkbox */
+.desktop_search .filter-button input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom circular checkbox */
+.desktop_search .custom-checkbox {
+  width: 1dvh;
+  opacity: 1;
+  height: 1dvh;
+  border-radius: 2dvh;
+  background-color: #44444473;
+  border: 1dvh solid #66666680;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Highlight circle when checked (no checkmark) */
+.desktop_search  .filter-button input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: rgb(255, 255, 100);
+  border-color: rgb(255, 255, 100);
+}
+
+/* Remove checkmark pseudo element */
+.desktop_search .custom-checkbox::after {
+  content: none;
+}
+
+/* Optional: hover effect */
+.desktop_search .filter-button:hover .custom-checkbox {
+  border-color: #999;
+}
+
+
+
+.desktop_search::after {
+  content: "";
+  position: absolute;   /* ✅ crucial! */
+  top: 50dvh;
+  left: 25vw;
+  width: 100%;
+  height: 40dvh;
+  background: url('../assets/Light_Vertical_Transparent.png') no-repeat center center;
+  background-size: contain; 
+  opacity: 0.6; 
+  z-index: 10; 
+  pointer-events: none;
+}
+
+.desktop_button_area{
+  height: 100%;
+  width: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop_button_area .button{
+  height: clamp(100px, 20dvh, 20dvh);
+  width: 1vw;
+  height: 10dvh;
+  max-width: 5px;
+  border-radius: 100px;
+  transform: translateY(-10dvh);
+  background-color: rgb(255, 255, 100);
+}
+
+.desktop_button_area:hover .button{
+  transition: height 0.4s ease;
+  height:15dvh;
+  
+}
+
+
+
+
+
+
+
+.mobile_bio {
+  padding: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.mobile_bio p {
+    color: white;
+     opacity: 0.6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.4rem, 3vw, 1rem);
+  margin-bottom: 1rem;
+}
+
+/* Contact links container: full width, flex row, justify edges */
+.mobile_bio .contact_links {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 4vw;
+  margin-top: 2vw;
+}
+
+/* Contact icons: scale down nicely */
+.mobile_bio .contact_links img {
+  width: 12vw;  /* adjust size as needed */
+  height: auto;
+  opacity: 0.5;
+  filter: brightness(0) invert(1);  /* turn black to grayish */
+}
+
+
+
+
+
+
+
+
+.mobile_search {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ✅ vertically center everything inside */
+  width: 100%;
+}
+
+.mobile_search .search_input {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vw;
+}
+
+
+.mobile_search .search_input input[type="text"] {
+  width: 100%;
+  padding: 2vw 5vw;
+  font-size: clamp(0.8rem, 3vw, 4rem);
+  border: 2px solid #66666680;
+  border-radius: 30px;      /* rounded pill shape */
+  background-color: #222;   /* dark background */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mobile_search .search_input input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.mobile_search .search_input input[type="text"]:focus {
+  border-color: rgb(255, 255, 100);
+  box-shadow: 0 0 8px rgb(255, 255, 100, 0.7);
+}
+
+
+/* Container holding the filter buttons — make it flex */
+.mobile_search .search_filter_container {
+  display: flex;
+  gap: 5vw;           /* spacing between toggles */
+  justify-content: left; /* center horizontally */
+  flex-wrap: wrap;     /* wrap to next line if needed */
+  padding: 5vw 10vw;     /* optional side padding */
+}
+
+/* Filter button styles */
+.mobile_search .filter-button {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  font-family: 'Bebas Neue', sans-serif;
+   font-size: clamp(0.8rem, 3vw, 4rem);
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Hide native checkbox */
+.mobile_search .filter-button input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom circular checkbox */
+.mobile_search .custom-checkbox {
+  width: 2vw;
+  opacity: 1;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #44444473;
+  border: 1vw solid #66666680;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Highlight circle when checked (no checkmark) */
+.mobile_search  .filter-button input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: rgb(255, 255, 100);
+  border-color: rgb(255, 255, 100);
+}
+
+/* Remove checkmark pseudo element */
+.mobile_search .custom-checkbox::after {
+  content: none;
+}
+
+/* Optional: hover effect */
+.mobile_search .filter-button:hover .custom-checkbox {
+  border-color: #999;
+}
+
+
+/* When active, shift left by 48vw */
+
+
+
+
+/*  _                 _                          
+ | |               | |                         
+ | | __ _ _ __   __| |___  ___ __ _ _ __   ___ 
+ | |/ _` | '_ \ / _` / __|/ __/ _` | '_ \ / _ \
+ | | (_| | | | | (_| \__ \ (_| (_| | |_) |  __/
+ |_|\__,_|_| |_|\__,_|___/\___\__,_| .__/ \___|
+                                   | |         
+                                   |_|   */
+
+@media (max-aspect-ratio: 1/1) {
+
+body::before {
+  content: "";
+  position: fixed; /* ✅ stays in place when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  background: url('../assets/Light_Vertical_Transparent.png') no-repeat center center;
+  background-size: contain; /* or 'cover' if you want it bigger */
+  opacity: 0.5; /* adjust to taste */
+  z-index: -1; /* ✅ behind all content */
+  pointer-events: none; /* ✅ ensures no blocking clicks */
+}
+
+.mobile_bio {
+    display: flex;
+}
+
+.mobile_search{
+  display: flex;
+}
+
+.desktop_bio_search{
+  display: none;
+}
+
+}
+
+
+

@@ -1,0 +1,297 @@
+/* === MOBILE DOC WINDOW === */
+.mobile_doc_window {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: none;          /* Always flex */
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 999;
+
+  /* Slide down + fade out when hidden */
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* When open: slide up + show */
+.mobile_doc_window.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* === BUTTON AREA === */
+.mobile_doc_window .button_area {
+  display: flex;            /* Always flex */
+  justify-content: center;
+  align-items: flex-end;
+  height: 10dvh;
+  cursor: pointer;
+}
+
+.mobile_doc_window .button {
+    z-index: 1000;
+  transform: translateY(2dvh);
+  background-color: rgb(255, 255, 100);
+  height: 1dvh;
+  width: 20vw;
+  border-radius: 100px;
+}
+
+/* === SCROLL CONTAINER === */
+.mobile_doc_window .scroll_container {
+  display: flex;            /* Always flex */
+  flex-direction: column;
+  background-color: rgba(77, 77, 77, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 90dvh;
+  overflow-y: auto;
+  width: 100vw;
+}
+
+/* === DOC GRID === */
+.mobile_doc_window .doc_grid {
+  width: 100vw;
+}
+
+/* === CONTENT STYLES === */
+.mobile_doc_window .title_box { margin: 0 0 10vw 0; }
+
+.mobile_doc_window .doc_title {
+  margin: 10vw 4vw 0 4vw;
+  font-size: clamp(0.8rem, 5vw, 4rem);
+  opacity: 0.8;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.mobile_doc_window .doc_subtitle {
+  margin: 2vw 4vw 0 4vw;
+  font-size: clamp(0.8rem, 3vw, 4rem);
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.mobile_doc_window .doc_grid img {
+  width: 100%;
+  margin-bottom: 2vw;
+  display: block;
+}
+
+.mobile_doc_window .text_block {
+  margin: 0vw 0vw 5vw 0vw;
+}
+
+.mobile_doc_window .doc_grid p {
+  margin: 1vw 4vw 0 4vw;
+  font-size: clamp(0.6rem, 3vw, 4rem);
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.mobile_doc_window .credits_box {
+  margin-bottom: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_doc_window .doc_grid a {
+  margin: 1vw 4vw 0 4vw;
+  font-size: clamp(0.6rem, 2vw, 4rem);
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+
+
+.mobile_doc_window .video_box iframe { 
+  margin-bottom: 2vw;
+  width: 100vw;
+  display: block;    /* Remove inline spacing */
+  border: none;      /* Optional: remove iframe border */
+  aspect-ratio: 16 / 9;
+}
+
+
+
+
+
+
+.desktop_doc_window {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;          /* Always flex */
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 999;
+  /* Slide down + fade out when hidden */
+  transform: translateX(100vw);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* When open: slide up + show */
+.desktop_doc_window.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* === BUTTON AREA === */
+.desktop_doc_window .button_area {
+  display: flex;            /* Always flex */
+  justify-content: end;
+  align-items: center;
+  height: 100dvh;
+  flex:1;
+  cursor: pointer;
+}
+
+.desktop_doc_window .button {
+    z-index: 1000;
+  transform: translateX(1.5vw) translateY(-10dvh);
+  background-color: rgb(255, 255, 100);
+  height: 10dvh;
+  width: 1vh;
+  max-width: 5px;
+  border-radius: 100px;
+}
+
+.desktop_doc_window .button_area:hover .button{
+  transition: height 0.4s ease;
+  height:15dvh;
+}
+
+
+
+/* === SCROLL CONTAINER === */
+.desktop_doc_window .scroll_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;        /* prevent wrapping */
+  overflow-x: auto;         /* enable horizontal scroll */
+  overflow-y: hidden;       /* prevent vertical scroll */
+  width: 90vw;
+  height: 100dvh;            /* or 100dvh for dynamic viewport */
+  background: rgba(77, 77, 77, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+
+/* === DOC GRID === */
+.desktop_doc_window .doc_grid {
+  height: 100%;
+  display: flex;
+  flex-direction: row;  /* content stacks vertically */
+  padding: 5dvh 0 5dvh 0;
+}
+
+
+/* === CONTENT STYLES === */
+.desktop_doc_window .title_box {
+  padding: 2dvh 5vw 2dvh 7vw;
+  flex: none;      /* don't grow or shrink */
+  width: auto;     /* ensure auto width */
+}
+
+
+.desktop_doc_window .doc_title {
+  font-size: clamp(2rem, 4vw, 5rem);
+  opacity: 0.9;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+}
+
+.desktop_doc_window .doc_subtitle {
+  font-size: clamp(1rem, 1vw, 3rem);
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.desktop_doc_window .text_block {
+  padding: 2dvh 0 2dvh 5vw;
+  flex: none;      /* don't grow or shrink */
+  width: 30vw;
+  min-width: 500px;
+}
+
+.desktop_doc_window .doc_grid p {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100%;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: white;
+  opacity: 0.8;
+}
+
+.desktop_doc_window .credits_box {
+  padding: 2dvh 0 2dvh 5vw;
+  display: flex;
+  flex-direction: column;
+  flex: none;    /* ✅ disables grow/shrink — wraps content */
+  justify-content: end;
+  text-align: end;
+}
+
+
+.desktop_doc_window .doc_grid a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.desktop_doc_window .video_box{
+  padding-left: 5vw;
+}
+
+.desktop_doc_window .video_box iframe { 
+  height: 60%;
+  display: block;    /* Remove inline spacing */
+  border: none;      /* Optional: remove iframe border */
+  aspect-ratio: 16 / 9;
+}
+
+
+.desktop_doc_window .doc_grid img {
+  margin-left: 2vw;
+  height: 100%;      /* Optional: narrower than viewport */
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* === ONLY ON MOBILE === */
+@media (max-aspect-ratio: 1/1) {
+  .mobile_doc_window {
+    display: flex !important;
+  }
+  .desktop_doc_window {
+    display: none !important;
+  }
+}

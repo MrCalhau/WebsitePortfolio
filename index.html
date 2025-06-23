@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" href="webicon.png" type="image/x-icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="webicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/work_grid.css" />
+  <link rel="stylesheet" href="css/search_and_bio_ mobile.css" />
+  <link rel="stylesheet" href="css/doc.css" />
+
+  <script src="js/aboutMeContent.js" defer></script>
+  <script src="js/workInfo.js" defer></script>
+  <script src="js/doc.js" defer></script>
+  <script src="js/work.js" defer></script>
+  <script src="js/bio_populate.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://www.hugoaston.com",
+      "name": "Hugo Aston Portfolio",
+      "logo": "https://www.hugoaston.com/webwidget_150px",
+      "image": "https://www.hugoaston.com/webwidget_150px",
+      "description": "Portfolio"
+    }
+  </script>
+
+</head>
+<body id="root">
+<div class="desktop_bio_search">
+  <div class="desktop_bio"></div>
+  <div class="desktop_search">
+    <div class="search_input">
+          <input type="text" placeholder="Search..." />
+      </div>
+      <div class="search_filter_container">
+          <label class="filter-button">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            Lighting
+          </label>
+          <label class="filter-button">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            Installation
+          </label>
+          <label class="filter-button">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            3D
+          </label>
+          <label class="filter-button">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            Research
+          </label>
+      </div>
+  </div>
+  <div class="desktop_button_area" onclick="open_biosearch()">
+        <div class="button"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mobile_doc_window">
+    <div class="button_area" onclick="mobile_close_doc_window()">
+      <div class="button"></div>
+    </div>
+    <div class="scroll_container">
+      <div class="doc_grid"></div>
+    </div>
+</div>
+
+
+<div class="desktop_doc_window">
+    <div class="button_area"  onclick="desktop_close_doc_window()">
+      <div class="button"></div>
+    </div>
+    <div class="scroll_container">
+      <div class="doc_grid"></div>
+    </div>
+</div>
+
+
+
+
+  <div id="work">
+    <div class="scroll_container">
+      <div class="mobile_bio_search">
+        <div class="mobile_bio"></div>
+        <div class="mobile_search">
+          <div class="search_input">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="search_filter_container">
+            <label class="filter-button">
+              <input type="checkbox" />
+              <span class="custom-checkbox"></span>
+              Lighting
+            </label>
+            <label class="filter-button">
+              <input type="checkbox" />
+              <span class="custom-checkbox"></span>
+              Installation
+            </label>
+            <label class="filter-button">
+              <input type="checkbox" />
+              <span class="custom-checkbox"></span>
+              3D
+            </label>
+            <label class="filter-button">
+              <input type="checkbox" />
+              <span class="custom-checkbox"></span>
+              Research
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="work_grid"></div>
+    </div>
+
+    <!-- ✅ Place mobile_doc_window HERE at SAME LEVEL -->
+
+  </div>
+</body>
