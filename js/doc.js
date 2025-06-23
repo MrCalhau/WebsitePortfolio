@@ -10,6 +10,7 @@ function mobile_close_doc_window() {
 function desktop_close_doc_window() {
   desktopDocWindow.classList.remove('open');
   desktopbioSearch.classList.remove('fullclose');
+  desktopbioSearch.classList.add('active');
   // ❌ NO NEED to call setHorizontalScroll("work") anymore
 }
 
@@ -43,6 +44,7 @@ function update_doc_window(index) {
 
     docGrid.appendChild(titleBox);
 
+    const flex_text = document.createElement('div');
     project.text.forEach(obj => {
       for (const key in obj) {
         const pBlock = document.createElement('div');
@@ -52,9 +54,12 @@ function update_doc_window(index) {
         p.textContent = obj[key];
         pBlock.appendChild(p);
 
-        docGrid.appendChild(pBlock);
+
+        flex_text.appendChild(pBlock);
       }
     });
+
+    docGrid.appendChild(flex_text);
 
     if (project.credits && project.credits.length > 0) {
       const creditsBox = document.createElement('div');
@@ -109,6 +114,7 @@ if (project.video && project.video.length > 0) {
   desktopDocWindow.classList.add('open');
   desktopbioSearch.classList.add('fullclose');
   setHorizontalScroll("doc");
+  reset_vertical_scroll();
 }
 
 window.update_doc_window = update_doc_window;

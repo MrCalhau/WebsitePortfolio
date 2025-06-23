@@ -33,6 +33,11 @@ if (!isPortraitOrSquare.matches) {
   setHorizontalScroll("work");
 }
 
+
+function reset_vertical_scroll(){
+  docScroll.scrollTop = -10;
+}
+
 // Optional: expose helper
 window.setHorizontalScroll = setHorizontalScroll;
 

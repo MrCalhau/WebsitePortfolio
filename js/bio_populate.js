@@ -1,5 +1,6 @@
 function populateBio() {
   const bioContainerMobile = document.querySelector('.mobile_bio');
+  const contactsContainerMobile = document.querySelector('.mobile_contacts_box');
   const bioContainerDesktop = document.querySelector('.desktop_bio');
 
   if (!bioContainerMobile && !bioContainerDesktop) {
@@ -12,17 +13,28 @@ function populateBio() {
 
   // Helper: fill bio content into given container
   function fillBio(container) {
-    // Clear it first
     container.innerHTML = '';
 
-    // Add paragraphs
+    const bio_container = document.createElement('div');
+    bio_container.className = "bio_container";
+
     bioArray.forEach(paragraph => {
       const p = document.createElement('p');
       p.textContent = paragraph;
-      container.appendChild(p);
+      bio_container.appendChild(p);
     });
 
-    // Add contacts
+    container.appendChild(bio_container);
+  }
+
+  // Fill bio parts
+  if (bioContainerMobile) fillBio(bioContainerMobile);
+  if (bioContainerDesktop) fillBio(bioContainerDesktop);
+
+  // Clear and fill contacts only once
+  if (contactsContainerMobile) {
+    contactsContainerMobile.innerHTML = '';
+
     const contactDiv = document.createElement('div');
     contactDiv.className = 'contact_links';
 
@@ -46,10 +58,6 @@ function populateBio() {
     contactDiv.appendChild(instaLink);
     contactDiv.appendChild(emailLink);
 
-    container.appendChild(contactDiv);
+    contactsContainerMobile.appendChild(contactDiv);
   }
-
-  // Fill both if they exist
-  if (bioContainerMobile) fillBio(bioContainerMobile);
-  if (bioContainerDesktop) fillBio(bioContainerDesktop);
 }
