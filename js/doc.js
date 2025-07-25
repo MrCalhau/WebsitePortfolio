@@ -10,7 +10,7 @@ function mobile_close_doc_window() {
 function desktop_close_doc_window() {
   desktopDocWindow.classList.remove('open');
   desktopbioSearch.classList.remove('fullclose');
-  desktopbioSearch.classList.add('active');
+  desktopbioSearch.classList.remove('active');
   // ❌ NO NEED to call setHorizontalScroll("work") anymore
 }
 
