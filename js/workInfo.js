@@ -40,6 +40,9 @@ const projectsList = [
                 ],
 
         text: [
+                {
+                text1: "lighting operation for fogo fogo concert at gnration open day",
+                },
                 ],
 
         credits: [
@@ -128,6 +131,9 @@ const projectsList = [
                 ],
 
         text: [
+                {
+                        text1:"lighting operation for moonshiners' final concert of their monkey’s poetry album tour at teatro aveirense",
+                }
                 ],
 
         credits: [
@@ -181,6 +187,50 @@ const projectsList = [
                 {
                 text: "the vaults",
                 link: "https://www.instagram.com/_thevaults_/"
+                },
+                ],
+        },
+
+        { title: 'ODE', 
+        subtitle: "circuito - BMA, 2025",
+        searchkeys: 'concerto', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration11.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration9.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration10.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration2.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration6.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration7.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration8.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration1.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration4.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration5.jpg',
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                        text1: 'lighting operation for ode – orquestra de dispositivos eletrónicos',
+                        text2: 'ode is part of the program "circuito – BMA" and involved multiple artists with and without musical backgrounds in an experimental performance',
+                        text3: "the performance also involved first-year students from the new media master's at the university of minho in creating and projecting mapped visuals"
+                }
+                ],
+
+        credits: [
+                {
+                text: "photography by lais pereiras",
+                link: "https://www.lais-pereira.pt/"
+                },
+                {
+                text: "circuito – BMA",
+                link: "https://www.bragamediaarts.com/pt/circuito/"
+                },
+                {
+                text: "gnration",
+                link: "https://www.gnration.pt/event/2025/ode-orquestra-de-dispositivos-eletronicos-4/"
                 },
                 ],
         },

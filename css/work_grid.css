@@ -190,7 +190,7 @@ html, body {
     align-content: start;  /* Align items to the top */
     justify-content: center; /* Center the grid horizontally */
     gap: 6vw;  /* Horizontal & vertical gap */
-    padding-bottom: 30dvh;
+    padding-bottom: 10dvh;
   }
 
   /* Adjust image size for narrower screens if you want */

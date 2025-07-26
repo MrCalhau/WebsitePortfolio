@@ -199,7 +199,7 @@
   height: 100%;
   display: flex;
   flex-direction: row;  /* content stacks vertically */
-  padding: 5dvh 0 5dvh 0;
+  padding: 5dvh 30dvh 5dvh 0;
 }
 
 
