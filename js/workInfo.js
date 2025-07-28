@@ -191,9 +191,150 @@ const projectsList = [
                 ],
         },
 
+        { title: 'zoh amba sun ensemble', 
+        subtitle: "julho é de jazz, 2025",
+        searchkeys: 'concerto gnration', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(7).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(4).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(6).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(3).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(2).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+zohambasunensemble/07-10-zohambasun+(8).jpg',
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                }
+                ],
+
+        credits: [
+                {
+                text: "zoh amba",
+                link: "https://www.instagram.com/zohamba/?hl=en"
+                },
+                {
+                text: "lex korten",
+                link: "https://www.instagram.com/lexkorten/?hl=en"
+                },
+                {
+                text: "miguel marcel russell",
+                link: "https://www.instagram.com/jeanmarcelbasquiat/?hl=en"
+                },
+
+
+                {
+                text: "photography by hugo sousa",
+                link: "https://www.instagram.com/hugo.cc.sousa/"
+                },
+                {
+                text: "gnration",
+                link: "https://www.gnration.pt/event/2025/julho-e-de-jazz-zoh-amba-sun-ensemble/"
+                },
+                ],
+        },
+
+        { title: 'ava mendoza / brad jones / hamid drake ', 
+        subtitle: "julho é de jazz, 2025",
+        searchkeys: 'concerto gnration', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(9).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(1).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(6).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(2).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(8).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(9).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(10).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(4).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(5).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(3).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(7).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-05+ava+mendozabradjoneshamiddrake/07-05-avamendoza-bradjones-hamiddrake+(11).jpg'
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                }
+                ],
+
+        credits: [
+                {
+                text: "ava mendoza",
+                link: "https://www.instagram.com/avamendozamuzak/?hl=en"
+                },{
+                text: "brad jones",
+                link: "https://www.allaboutjazz.com/musicians/brad-jones/"
+                },{
+                text: "hamid drake",
+                link: "https://open.spotify.com/artist/3UJfOrT4kZIoRtRfaCQgFp"
+                },
+                {
+                text: "photography by hugo sousa",
+                link: "https://www.instagram.com/hugo.cc.sousa/"
+                },
+                {
+                text: "gnration",
+                link: "https://www.gnration.pt/event/2025/julho-e-de-jazz-ava-mendoza-brad-jones-hamid-drake/"
+                },
+                ],
+        },
+
+        { title: 'ricardo toscano & gabriel ferrandini', 
+        subtitle: "julho é de jazz, 2025",
+        searchkeys: 'concerto gnration', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(8).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(3).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(7).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(9).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(6).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(5).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(4).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(1).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-04+ricardotoscano%26gabrielferrandini/04-10+ricardotoscano%26gabrielferrandini+(2).jpg',
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+
+                }
+                ],
+
+        credits: [
+                {
+                text: "ricardo toscano",
+                link: "https://www.instagram.com/thericardotoscano/?hl=en"
+                },
+                {
+                text: "gabriel ferrandini",
+                link: "https://www.instagram.com/gabrielferrandini/?hl=en"
+                },
+                {
+                text: "photography by hugo sousa",
+                link: "https://www.instagram.com/hugo.cc.sousa/"
+                },
+                {
+                text: "gnration",
+                link: "https://www.gnration.pt/event/2025/julho-e-de-jazz-ricardo-toscano-gabriel-ferrandini/"
+                },
+                ],
+        },
+
         { title: 'ODE', 
         subtitle: "circuito - BMA, 2025",
-        searchkeys: 'concerto', 
+        searchkeys: 'concerto gnration', 
         filters: ['lighting'],  
         images: [
                 'https://f003.backblazeb2.com/file/website-images/lighting/2025/07-07+ode/07-07_ode_gnration11.jpg',
@@ -234,6 +375,7 @@ const projectsList = [
                 },
                 ],
         },
+
 
 
 
