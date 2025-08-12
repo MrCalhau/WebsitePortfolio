@@ -11,6 +11,47 @@ const projectsList = [
   / /_| |_| / /_ ___) |
  |____|\___/____|____/ */
 
+        { title: 'The Vaults V3', 
+        subtitle: 'esteoeste, 2025', 
+        searchkeys: 'concerto', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults01.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults42.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults53.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults10.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults49.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults56.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults59.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults34.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults29.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults37.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults22.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults20.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/08-09+thevaults/08-9-thevaults09.jpg',
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                text1: "lighting operation for thevaults concert at esteoeste festival.",
+                },
+                ],
+
+        credits: [
+                {
+                text: "photography by sérgio dias",
+                link: "https://www.instagram.com/sergiodiasfotografia/"
+                },
+                {
+                text: "esteoeste",
+                link: "https://www.instagram.com/festivalesteoeste/"
+                },
+                ]
+
+        },
 
         { title: 'Fogo Fogo', 
         subtitle: 'gnration open day, 2025', 
@@ -41,7 +82,7 @@ const projectsList = [
 
         text: [
                 {
-                text1: "lighting operation for fogo fogo concert at gnration open day",
+                text1: "lighting operation for fogo fogo concert at gnration open day.",
                 },
                 ],
 
@@ -132,7 +173,7 @@ const projectsList = [
 
         text: [
                 {
-                        text1:"lighting operation for moonshiners' final concert of their monkey’s poetry album tour at teatro aveirense",
+                        text1:"lighting operation for moonshiners' final concert of their monkey’s poetry album tour at teatro aveirense.",
                 }
                 ],
 
