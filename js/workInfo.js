@@ -11,6 +11,52 @@ const projectsList = [
   / /_| |_| / /_ ___) |
  |____|\___/____|____/ */
 
+
+        { 
+    title: 'Sussie Filipe', 
+    subtitle: 'em tempo real, 2025', 
+    searchkeys: 'concerto', 
+    filters: ['lighting'],  
+    images: [
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe04.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe02.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe03.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe01.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe05.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe06.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe07.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe08.jpg',
+        'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-20+sussiefilipe/09-20-sussiefilipe09.jpg'
+    ],
+
+    video: [
+    ],
+
+    text: [
+        {
+            text1: 'lighting operation for sussie filipe\'s album debut "em tempo real" at teatro aveirense.'
+        }
+    ],
+
+    credits: [
+        {
+            text: "sussie filipe",
+            link: "https://www.instagram.com/susiefilipe/?hl=en"
+        },
+        {
+            text: "teatro aveirense",
+            link: "https://www.teatroaveirense.pt/pt/"
+        },
+         {
+            text: "lighting desgin by diogo mendes",
+            link: "https://www.diogo.bio/?fbclid=PAZXh0bgNhZW0CMTEAAae15dzwGAvCSXtvKgDMxDbIo_decujueVYK7pw5Qo_ggHzer5eliNgx9pYcMg_aem_zz05rTVkaVm-zSFg5khV_A"
+        },
+    ]
+},
+
+
+
+
         { title: 'The Vaults V3', 
         subtitle: 'esteoeste, 2025', 
         searchkeys: 'concerto', 
