@@ -12,6 +12,88 @@ const projectsList = [
  |____|\___/____|____/ */
 
 
+ { title: 'SemiVitae', 
+        subtitle: 'gnration, 2025', 
+        searchkeys: 'concerto', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(8).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(2).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(3).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(4).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(5).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(6).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(7).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(1).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-13+semivitae/09-13-semivitae01+(9).jpg',
+                
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                text1: "lighting operation for semivitae concert in gnration.",
+                },
+                ],
+
+        credits: [
+                {
+                text: "photography by hugo sousa",
+                link: "https://www.instagram.com/hugo.cc.sousa/"
+                },
+                {
+                text: "semivitae",
+                link: "https://www.instagram.com/semivitae/?hl=en"
+                },
+                {
+                text: "gneration",
+                link: "https://www.gnration.pt/"
+                },
+                ]
+
+        },
+
+{ title: 'Evols', 
+        subtitle: 'gnration, 2025', 
+        searchkeys: 'concerto', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(4).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(2).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(3).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(1).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(5).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(6).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(7).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(8).jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-05+evols/09-05-evols+(9).jpg',
+                
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                text1: "lighting design and operation for evols concert in gnration.",
+                },
+                ],
+
+        credits: [
+                {
+                text: "evols",
+                link: "https://www.instagram.com/evols_band/?hl=en"
+                },
+                {
+                text: "gneration",
+                link: "https://www.gnration.pt/"
+                },
+                ]
+
+        },
+
         { 
     title: 'Sussie Filipe', 
     subtitle: 'em tempo real, 2025', 
@@ -276,6 +358,44 @@ const projectsList = [
                 link: "https://www.instagram.com/_thevaults_/"
                 },
                 ],
+        },
+
+        { title: 'Alcrud3', 
+        subtitle: 'gnration, 2025', 
+        searchkeys: 'concerto', 
+        filters: ['lighting'],  
+        images: [
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud307.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud302.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud303.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud304.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud305.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud306.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud301.jpg',
+                'https://f003.backblazeb2.com/file/website-images/lighting/2025/09-06+alcrud3/09-06-alcrud308.jpg',
+                
+                ],
+
+        video: [
+                ],
+
+        text: [
+                {
+                text1: "lighting design and operation for alcrud3 concert in gnration.",
+                },
+                ],
+
+        credits: [
+                {
+                text: "alcrud3",
+                link: "https://www.instagram.com/alcrud3/?hl=en"
+                },
+                {
+                text: "gneration",
+                link: "https://www.gnration.pt/"
+                },
+                ]
+
         },
 
         { title: 'zoh amba sun ensemble', 
